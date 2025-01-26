@@ -1,0 +1,299 @@
+[
+  {
+    "question": "What is the phase where the universe cooled down and subatomic particles formed?",
+    "options": [
+      "Big Bang Nucleosynthesis",
+      "Stellar Nucleosynthesis",
+      "Supernova",
+      "Nuclear Fission"
+    ],
+    "correctAnswer": "Big Bang Nucleosynthesis"
+  },
+  {
+    "question": "Which of the following is true about carbon isotopes?",
+    "options": [
+      "Carbon has three fundamental isotopes: carbon-12, carbon-13, and carbon-14",
+      "Carbon only has one stable isotope, carbon-12",
+      "All carbon isotopes have the same number of neutrons"
+    ],
+    "correctAnswer": "Carbon has three fundamental isotopes: carbon-12, carbon-13, and carbon-14"
+  },
+  {
+    "question": "Which statement is correct about the number of electrons or neutrons in an element?",
+    "options": [
+      "An element can have different number of electrons or neutrons but always has the same number of protons.",
+      "The number of electrons, neutrons, and protons is always the same for all elements.",
+      "An element can have different number of protons but always has the same number of electrons or neutrons."
+    ],
+    "correctAnswer": "An element can have different number of electrons or neutrons but always has the same number of protons."
+  },
+  {
+    "question": "How many different types of atoms (elements) are known to exist?",
+    "options": [
+      "Over 100",
+      "Exactly 100",
+      "Less than 50",
+      "An infinite number"
+    ],
+    "correctAnswer": "Over 100"
+  },
+  {
+    "question": "Does adding neutrons to a nucleus change the element?",
+    "options": [
+      "No, adding neutrons to a nucleus doesn’t change an element.",
+      "Yes, adding neutrons always changes the element.",
+      "It depends on the number of neutrons added."
+    ],
+    "correctAnswer": "No, adding neutrons to a nucleus doesn’t change an element."
+  },
+  {
+    "question": "Where are heavy elements formed?",
+    "options": [
+      "In a supernova, a massive explosion of a star",
+      "In the core of planets",
+      "During chemical reactions",
+      "In laboratories"
+    ],
+    "correctAnswer": "In a supernova, a massive explosion of a star"
+  },
+  {
+    "question": "What is true about the layers near the core of a star?",
+    "options": [
+      "Layers near core of star have very high temperatures enough to nucleosynthesize heavy elements such as silicon and iron.",
+      "They are composed of only hydrogen and helium.",
+      "They are too cold for any nuclear reactions to occur.",
+      "They are responsible for the star's magnetic field."
+    ],
+    "correctAnswer": "Layers near core of star have very high temperatures enough to nucleosynthesize heavy elements such as silicon and iron."
+  },
+  {
+    "question": "What allows the density outside a star to sustain fusion for extended periods?",
+    "options": [
+      "The density outside a star is great enough to sustain fusion for extended time periods.",
+      "The low density allows for rapid fusion.",
+      "The presence of heavy elements enables fusion.",
+      "Fusion does not occur outside the star's core."
+    ],
+    "correctAnswer": "The density outside a star is great enough to sustain fusion for extended time periods."
+  },
+  {
+    "question": "What happens in a neutron-capture reaction?",
+    "options": [
+      "Heavy elements are created by addition of more neutrons to existing nuclei instead of fusion of light nuclei",
+      "Light elements fuse to form heavier elements.",
+      "Neutrons are converted into protons.",
+      "Neutrons are expelled from the nucleus."
+    ],
+    "correctAnswer": "Heavy elements are created by addition of more neutrons to existing nuclei instead of fusion of light nuclei"
+  },
+  {
+    "question": "Which isotope of carbon is the most common and stable?",
+    "options": [
+      "Carbon-12",
+      "Carbon-14",
+      "Carbon-13",
+      "All carbon isotopes are equally common"
+    ],
+    "correctAnswer": "Carbon-12"
+  },
+  {
+    "question": "What is the term for an explosive death of a star?",
+    "options": [
+      "Supernova",
+      "Nucleosynthesis",
+      "Isotope",
+      "Fusion"
+    ],
+    "correctAnswer": "Supernova"
+  },
+  {
+    "question": "What is the process that creates new atomic nuclei from pre-existing nucleons?",
+    "options": [
+      "Nucleosynthesis",
+      "Fusion",
+      "Fission",
+      "Isotope Notation"
+    ],
+    "correctAnswer": "Nucleosynthesis"
+  },
+  {
+    "question": "What is the smallest unit of matter that retains the properties of an element?",
+    "options": [
+      "Atom",
+      "Proton",
+      "Electron",
+      "Neutron"
+    ],
+    "correctAnswer": "Atom"
+  },
+  {
+    "question": "What is a form of an element with the same atomic number but a different atomic mass?",
+    "options": [
+      "Isotope",
+      "Deuterium",
+      "Ion",
+      "Molecule"
+    ],
+    "correctAnswer": "Isotope"
+  },
+  {
+    "question": "What is a combination or the process of joining things together?",
+    "options": [
+      "Fusion",
+      "Fission",
+      "Nucleosynthesis",
+      "Isotope Notation"
+    ],
+    "correctAnswer": "Fusion"
+  },
+  {
+    "question": "What is the formation of heavy elements by the fusion of lighter nuclei in the interior of stars?",
+    "options": [
+      "Stellar Nucleosynthesis",
+      "Supernova",
+      "Nuclear Fission",
+      "Big Bang Nucleosynthesis"
+    ],
+    "correctAnswer": "Stellar Nucleosynthesis"
+  },
+  {
+    "question": "What is the action of separation or splitting of particles?",
+    "options": [
+      "Fission",
+      "Fusion",
+      "Isotope Notation",
+      "Nucleosynthesis"
+    ],
+    "correctAnswer": "Fission"
+  },
+  {
+    "question": "What is a way to represent different isotopes of an element?",
+    "options": [
+      "Isotope Notation",
+      "Atomic Symbol",
+      "Atomic Number",
+      "Atomic Weight"
+    ],
+    "correctAnswer": "Isotope Notation"
+  },
+  {
+    "question": "What is an isotope of hydrogen with one proton and one neutron?",
+    "options": [
+      "Deuterium",
+      "Tritium",
+      "Protium",
+      "Carbon-12"
+    ],
+    "correctAnswer": "Deuterium"
+  },
+  {
+    "question": "Deuterium + Neutron = ?",
+    "options": [
+      "Tritium",
+      "Protium",
+      "Carbon-12",
+      "Deuterium"
+    ],
+    "correctAnswer": "Tritium"
+  },
+  {
+    "question": "In an element symbol, what does the number at the top represent?",
+    "options": [
+      "Atomic Number",
+      "Atomic Weight",
+      "Element Symbol",
+      "Charge of the atom"
+    ],
+    "correctAnswer": "Atomic Number"
+  },
+  {
+    "question": "In an element symbol, what does the letter or letters in the middle represent?",
+    "options": [
+      "Element Symbol",
+      "Atomic Number",
+      "Atomic Weight",
+      "Isotope Notation"
+    ],
+    "correctAnswer": "Element Symbol"
+  },
+  {
+    "question": "In an element symbol, what does the number at the bottom represent?",
+    "options": [
+      "Atomic Weight",
+      "Atomic Number",
+      "Element Name",
+      "Number of Neutrons"
+    ],
+    "correctAnswer": "Atomic Weight"
+  },
+  {
+    "question": "Who proposed the theory that water (H2O) is the fundamental substance of matter?",
+    "options": [
+      "Thales of Miletus",
+      "Empedocles of Agrigentum",
+      "Leucippus",
+      "Democritus of Abdera"
+    ],
+    "correctAnswer": "Thales of Miletus"
+  },
+  {
+    "question": "Who proposed that matter is composed of four elements: air, water, earth, and fire?",
+    "options": [
+      "Empedocles of Agrigentum",
+      "Thales of Miletus",
+      "Leucippus",
+      "Aristotle"
+    ],
+    "correctAnswer": "Empedocles of Agrigentum"
+  },
+  {
+    "question": "Who is credited with the idea that all things are made up of tiny, indivisible particles?",
+    "options": [
+      "Leucippus",
+      "Democritus of Abdera",
+      "Aristotle",
+      "Empedocles of Agrigentum"
+    ],
+    "correctAnswer": "Leucippus"
+  },
+  {
+    "question": "Who developed the atomic theory, stating that all matter is composed of small, indestructible particles called atoms?",
+    "options": [
+      "Democritus of Abdera",
+      "Leucippus",
+      "Thales of Miletus",
+      "Aristotle"
+    ],
+    "correctAnswer": "Democritus of Abdera"
+  },
+  {
+    "question": "Which philosopher rejected the atomic theory and believed that there is no smallest part of matter?",
+    "options": [
+      "Aristotle",
+      "Democritus of Abdera",
+      "Leucippus",
+      "Empedocles of Agrigentum"
+    ],
+    "correctAnswer": "Aristotle"
+  },
+  {
+    "question": "What were the primary aims of the medieval practice of alchemy?",
+    "options": [
+      "Transform common metals into gold",
+      "Discover the Elixir of Immortality",
+      "Create new elements",
+      "Both A and B"
+    ],
+    "correctAnswer": "Both A and B"
+  },
+  {
+    "question": "Which of the following is NOT a part of Dalton's Atomic Theory?",
+    "options": [
+      "Atoms can be subdivided into smaller particles",
+      "Matter is composed of atoms",
+      "Atoms of a given element are identical",
+      "Compounds contain atoms of different elements combined in specific ratios"
+    ],
+    "correctAnswer": "Atoms can be subdivided into smaller particles"
+  }
+]

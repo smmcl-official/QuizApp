@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="timer">Time: 00:00</div>
+        <h1>Quiz Time!</h1>
+        <div id="question">Question goes here</div>
+        <div id="options">
+            <button class="option">Option 1</button>
+            <button class="option">Option 2</button>
+            <button class="option">Option 3</button>
+            <button class="option">Option 4</button>
+        </div>
+        <button id="next-button">Next</button>
+        <div id="result"></div>
+        <div id="incorrect-answers" style="display: none;">
+          <h2>Incorrect Answers:</h2>
+          <ul id="incorrect-list"></ul>
+          <button id="try-again-button">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
