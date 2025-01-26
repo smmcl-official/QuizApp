@@ -1,55 +1,321 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
-}
-
-#quiz-container {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #quiz-container {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 600px;
     text-align: center;
-}
-
-#question {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.option {
+  }
+  
+  #question {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  
+  .option {
     display: block;
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 18px 24px;
+    margin: 12px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     background-color: #f8f8f8;
     cursor: pointer;
-}
-
-.option:hover {
-    background-color: #e8e8e8;
-}
-
-#next-button {
-    background-color: #4CAF50; /* Green */
+    font-size: 18px;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+    border-color: #d0d0d0;
+  }
+  
+  #next-button {
+    background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 24px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  #next-button:hover {
+    background-color: #45a049;
+  }
+  
+  #result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Incorrect Answers Styling */
+  #incorrect-answers {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  #incorrect-answers h2 {
+    font-size: 20px;
+    color: #d9534f; /* Red color for incorrect answers */
+    margin-bottom: 10px;
+  }
+  
+  #incorrect-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #incorrect-list li {
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb; /* Light red border */
+    color: #721c24; /* Dark red text color */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  #try-again-button {
+    background-color: #007bff; /* Blue color */
+    border: none;
+    color: white;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 20px 0;
+    margin-top: 15px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-#result {
-    font-size: 18px;
-    font-weight: bold;
-}
+    transition: background-color 0.2s;
+  }
+  
+  #try-again-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Input Area Styles */
+  #input-area {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  #question-input {
+    width: 93%;
+    height: 200px;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    resize: vertical;
+  }
+  
+  /* Help Icon Styles */
+  .help-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 36px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+  }
+  
+  .help-icon:hover {
+    background-color: #45a049;
+  }
+  
+  /* Help Content Styles */
+  #help-content {
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    width: 380px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 24px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 12px;
+    animation: expand 0.3s ease-in-out forwards;
+  }
+  
+  #help-content.hidden {
+    display: none;
+  }
+  
+  @keyframes expand {
+    0% {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #help-content h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 24px;
+  }
+  
+  #help-content h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 24px;
+  }
+  
+  #help-content ol,
+  #help-content ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  #help-content p {
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+  
+  #help-content ul li {
+    margin-bottom: 8px;
+    text-indent: 0;
+  }
+  
+  #help-content li {
+    margin-bottom: 8px;
+  }
+  
+  #help-content strong {
+    color: #4CAF50;
+  }
+  
+  #help-content .example {
+    margin: 10px 0;
+  }
+  
+  #help-content pre {
+    background-color: #f0f0f0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+  }
+  
+  #help-content code {
+    background-color: #e8e8e8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  #copy-tutorial-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 15px auto;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #copy-tutorial-button:hover {
+    background-color: #367c39;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    #quiz-container {
+      padding: 30px;
+    }
+  
+    #question {
+      font-size: 22px;
+    }
+  
+    .option {
+      padding: 16px 20px;
+      font-size: 16px;
+    }
+  
+    #next-button {
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+  
+    #result {
+      font-size: 18px;
+    }
+  
+    #incorrect-list li {
+      font-size: 14px;
+    }
+  
+    #help-content {
+      width: 90%;
+      right: 5%;
+    }
+  
+    #question-input {
+      width: 85%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #help-content {
+      top: 50px;
+      width: 95%;
+      right: 2%;
+    }
+  
+    #question-input {
+      width: 80%;
+    }
+  
+    .help-icon {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }

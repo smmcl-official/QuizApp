@@ -2,26 +2,89 @@
 <html>
 <head>
     <title>Multiple Choice Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="quiz-container">
         <div id="timer">Time: 00:00</div>
         <h1>Quiz Time!</h1>
-        <div id="question">Question goes here</div>
-        <div id="options">
-            <button class="option">Option 1</button>
-            <button class="option">Option 2</button>
-            <button class="option">Option 3</button>
-            <button class="option">Option 4</button>
+
+        <div id="input-area">
+            <div class="help-icon">?</div>
+            <div id="help-content" class="hidden">
+                <h2>Creating Quiz Questions: A Step-by-Step Guide</h2>
+                <p>Follow these instructions to format your quiz questions correctly:</p>
+                <h3>1. The Question:</h3>
+                <p>Start each question with the keyword <strong class="keyword">Question:</strong> followed by your question text. </p>
+                <p class="example">Example: <br>
+                    <pre><code class="keyword">Question:</code> What is the capital of Australia?</pre>
+                </p>
+                <h3>2. The Choices:</h3>
+                <p>On a new line, use the keyword <strong class="keyword">Choices:</strong> to begin listing the possible answers.</p>
+                <p>Each choice should:</p>
+                <ul>
+                    <li>Start on a new line.</li>
+                    <li>Begin with a single capital letter identifier (A, B, C, or D) followed by a closing parenthesis.</li>
+                    <li>Contain the choice text.</li>
+                </ul>
+                <p class="example">Example: <br>
+                    <pre>
+<code class="keyword">Choices:</code>
+  A) Sydney
+  B) Melbourne
+  C) Canberra
+  D) Perth</pre>
+                </p>
+                <h3>3. The Correct Answer:</h3>
+                <p>On a new line, use the keyword <strong class="keyword">Correct Answer:</strong> followed by the letter identifier and the text of the correct answer (exactly as it appears in the choices).</p>
+                <p class="example">Example: <br>
+                    <pre><code class="keyword">Correct Answer:</code> C) Canberra</pre>
+                </p>
+                <h3>4. Separating Questions:</h3>
+                <p>Place three hyphens (<strong class="keyword">---</strong>) on a new line to separate each question from the next.</p>
+                <h3>Complete Template:</h3>
+                <pre>
+<code class="keyword">Question:</code> What is the capital of France?
+<code class="keyword">Choices:</code>
+  A) London
+  B) Paris
+  C) Berlin
+  D) Rome
+<code class="keyword">Correct Answer:</code> B) Paris
+---
+<code class="keyword">Question:</code> What is the highest mountain in the world?
+<code class="keyword">Choices:</code>
+  A) K2
+  B) Kangchenjunga
+  C) Mount Everest
+  D) Lhotse
+<code class="keyword">Correct Answer:</code> C) Mount Everest
+---
+</pre>
+                <button id="copy-tutorial-button">Copy Tutorial</button>
+            </div>
+
+            <textarea id="question-input" placeholder="Enter your questions here..."></textarea>
+            <button id="submit-questions">Start Quiz</button>
         </div>
-        <button id="next-button">Next</button>
-        <div id="result"></div>
-        <div id="incorrect-answers" style="display: none;">
-          <h2>Incorrect Answers:</h2>
-          <ul id="incorrect-list"></ul>
-          <button id="try-again-button">Try Again</button>
-      </div>
+
+        <div id="quiz-area" style="display: none;">
+            <div id="question">Question goes here</div>
+            <div id="options">
+                <button class="option">Option 1</button>
+                <button class="option">Option 2</button>
+                <button class="option">Option 3</button>
+                <button class="option">Option 4</button>
+            </div>
+            <button id="next-button">Next</button>
+            <div id="result" style="display: none;"></div>
+            <div id="incorrect-answers" style="display: none;">
+                <h2>Incorrect Answers:</h2>
+                <ul id="incorrect-list"></ul>
+                <button id="try-again-button">Try Again</button>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
